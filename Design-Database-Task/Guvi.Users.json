@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "664f4b7ad3dc6db53addba8e"
+  },
+  "id": "1",
+  "name": "Alice",
+  "email": "alice@example.com",
+  "role": "student",
+  "mentors": "1"
+},
+{
+  "_id": {
+    "$oid": "664f4b7ad3dc6db53addba8f"
+  },
+  "id": "2",
+  "name": "Bob",
+  "email": "bob@example.com",
+  "role": "student",
+  "mentors": "2"
+},
+{
+  "_id": {
+    "$oid": "664f4b7ad3dc6db53addba90"
+  },
+  "id": "3",
+  "name": "Charlie",
+  "email": "charlie@example.com",
+  "role": "mentor",
+  "mentors": "3"
+},
+{
+  "_id": {
+    "$oid": "6653af9f58d3bb82604696dd"
+  },
+  "id": "4",
+  "name": "John",
+  "email": "john@example.com",
+  "role": "student",
+  "mentors": "4"
+},
+{
+  "_id": {
+    "$oid": "6653affb58d3bb82604696de"
+  },
+  "id": "5",
+  "name": "robert",
+  "email": "robert@example.com",
+  "role": "mentor",
+  "mentors": "5"
+},
+{
+  "_id": {
+    "$oid": "6653b38c58d3bb82604696e8"
+  },
+  "id": "3",
+  "name": "manimuthu",
+  "email": "manimuthu@example.com",
+  "role": "student",
+  "mentors": "3"
+}]

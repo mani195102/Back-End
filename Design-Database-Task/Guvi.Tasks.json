@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "664f4b5bd3dc6db53addba86"
+  },
+  "id": "1",
+  "task_name": "Build a Simple Calculator",
+  "description": "Create a basic calculator using HTML, CSS, and JavaScript.",
+  "due_date": "2020-09-05",
+  "topic_id": "1",
+  "submitted": "true"
+},
+{
+  "_id": {
+    "$oid": "664f4b5bd3dc6db53addba87"
+  },
+  "id": "2",
+  "task_name": "Weather App",
+  "description": "Develop a weather application using APIs.",
+  "due_date": "2020-09-10",
+  "topic_id": "2",
+  "submitted": "false"
+},
+{
+  "_id": {
+    "$oid": "664f4b5bd3dc6db53addba88"
+  },
+  "id": "3",
+  "task_name": "Todo List",
+  "description": "Implement a todo list with CRUD operations.",
+  "due_date": "2020-09-15",
+  "topic_id": "3",
+  "submitted": "true"
+},
+{
+  "_id": {
+    "$oid": "66539e7058d3bb82604696cd"
+  },
+  "id": "4",
+  "task_name": "calc List",
+  "description": "Implement a calc list with CRUD operations.",
+  "due_date": "2020-09-19",
+  "topic_id": "4",
+  "submitted": "true"
+},
+{
+  "_id": {
+    "$oid": "6653a24558d3bb82604696d6"
+  },
+  "id": "5",
+  "task_name": "library List",
+  "description": "Implement a library list with CRUD operations.",
+  "due_date": "2020-09-23",
+  "topic_id": "5",
+  "submitted": "false"
+}]

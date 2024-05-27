@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "664f4b6ad3dc6db53addba8a"
+  },
+  "topic_name": "JavaScript Basics",
+  "date": "2020-09-01",
+  "id": "1"
+},
+{
+  "_id": {
+    "$oid": "664f4b6ad3dc6db53addba8b"
+  },
+  "topic_name": "Advanced JavaScript",
+  "date": "2020-09-02",
+  "id": "2"
+},
+{
+  "_id": {
+    "$oid": "664f4b6ad3dc6db53addba8c"
+  },
+  "topic_name": "Node.js Introduction",
+  "date": "2020-09-03",
+  "id": "3"
+},
+{
+  "_id": {
+    "$oid": "6653993658d3bb82604696ca"
+  },
+  "topic_name": "REACT JS",
+  "date": "2020-09-17",
+  "id": "4"
+},
+{
+  "_id": {
+    "$oid": "665399dd58d3bb82604696cc"
+  },
+  "topic_name": "Mongo DB",
+  "date": "2020-09-21",
+  "id": "5"
+}]
