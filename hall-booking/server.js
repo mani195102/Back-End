@@ -7,7 +7,7 @@ const app = express();
 
 // Database connection
 //mongoose.connect('mongodb://localhost:27017/booking_app', { useNewUrlParser: true, useUnifiedTopology: true })
-mongoose.connect('mongodb://localhost:27017/booking_app', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://manimuthu:manimuthu@atlascluster.hxn7eop.mongodb.net/booking_app', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err));
 
