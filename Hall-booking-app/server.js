@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 const roomController = require('./controllers/roomController');
 const bookingController = require('./controllers/bookingController');
 const customerController = require('./controllers/customerController');
+require("dotenv").config();
+const PORT = 3000;
 
 // Middleware
 const app = express();
@@ -27,10 +29,10 @@ app.use((err, req, res, next) => {
     res.status(500).json({ message: 'Internal Server Error' });
 });
 
-const PORT = process.env.PORT || 3000;
-mongoose.connect("mongodb+srv://manimuthu:manimuthu@atlascluster.hxn7eop.mongodb.net/hall-booking").then(() =>{
+
+mongoose.connect(process.env.MONGODB).then(() =>{
     console.log("connected to MongoDB");
-    app.listen(PORT, () => {
+    app.listen(process.env.PORT, () => {
         console.log(`Server is running on port ${PORT}`);
     });
 })
