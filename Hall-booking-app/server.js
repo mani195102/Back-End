@@ -25,7 +25,8 @@ app.get('/api/customers/:customerName/bookings', customerController.listCustomer
 
 // Error handling middleware
 app.use((err, req, res, next) => {
-    console.error(err.stack);
+    console.error('Error stack:', err.stack);
+    console.error('Error message:', err.message);
     res.status(500).json({ message: 'Internal Server Error' });
 });
 
