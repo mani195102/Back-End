@@ -2,11 +2,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+require("dotenv").config();
 
 const app = express();
 
 // Database connection
-mongoose.connect('mongodb://localhost:27017/booking_app', { useNewUrlParser: true, useUnifiedTopology: true })
+//mongoose.connect('mongodb://localhost:27017/booking_app', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect( process.env.MONGODB, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err));
 
