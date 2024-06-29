@@ -53,6 +53,52 @@ CREATE INDEX idx_user_id ON Enrollments(user_id);
 CREATE INDEX idx_class_id ON Enrollments(class_id);
 CREATE INDEX idx_instructor_user_class ON Instructors(user_id, class_id);
 
+-- Additional Tables for Educational Platform Functionality
+
+-- Assignments Table
+CREATE TABLE Assignments (
+    assignment_id INT AUTO_INCREMENT PRIMARY KEY,
+    class_id INT NOT NULL,
+    assignment_name VARCHAR(100) NOT NULL,
+    description TEXT,
+    due_date DATETIME NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (class_id) REFERENCES Classes(class_id)
+);
+
+-- Submissions Table
+CREATE TABLE Submissions (
+    submission_id INT AUTO_INCREMENT PRIMARY KEY,
+    assignment_id INT NOT NULL,
+    user_id INT NOT NULL,
+    submission_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    content TEXT,
+    score DECIMAL(5,2),
+    FOREIGN KEY (assignment_id) REFERENCES Assignments(assignment_id),
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
+-- Messages Table for Communication
+CREATE TABLE Messages (
+    message_id INT AUTO_INCREMENT PRIMARY KEY,
+    sender_id INT NOT NULL,
+    receiver_id INT NOT NULL,
+    message_content TEXT,
+    sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (sender_id) REFERENCES Users(user_id),
+    FOREIGN KEY (receiver_id) REFERENCES Users(user_id)
+);
+
+-- Grades Table
+CREATE TABLE Grades (
+    grade_id INT AUTO_INCREMENT PRIMARY KEY,
+    enrollment_id INT NOT NULL,
+    assignment_id INT NOT NULL,
+    score DECIMAL(5,2),
+    graded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (enrollment_id) REFERENCES Enrollments(enrollment_id),
+    FOREIGN KEY (assignment_id) REFERENCES Assignments(assignment_id)
+);
 
 
 -- Insert sample users
